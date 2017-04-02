@@ -1,0 +1,317 @@
+/* Coastal Research at Lancaster University
+Thomas Burke
+13/03/2017 */
+
+/* Clearfix */
+
+.Clearfix:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+
+/* General */
+
+.MainBody {
+	margin: 0;
+	padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.Container {
+	margin: 0 auto;
+	width: 85%;
+	max-width: 1200px;
+	overflow: hidden;
+}
+
+a {
+    color: rgb(37, 126, 139)
+}
+
+
+/* Header */
+
+.HeaderOuter {
+	background-image: url(header_background.png);
+	background-repeat: repeat;
+}
+
+.Header {
+	overflow: hidden;
+    text-align: center;
+}
+
+.Logo {
+	width: 90%;
+	max-width: 500px;
+	margin: 15px 0;
+}
+
+
+/* Navigation */
+
+.NavOuter {
+	background-color: rgb(37, 171, 191)
+}
+
+.Nav {
+    background-color: rgb(37, 171, 191)
+}
+
+.Navlist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    text-align: center;
+}
+
+.Navlist li {
+	display: inline-block;
+}
+
+.Navlist li a {
+	display: block;
+	padding: 0 35px;
+	text-decoration: none;
+	font-size: 1rem;
+    line-height: 55px;
+    color: rgb(255, 255, 255);
+}
+
+.Navlist li:hover {
+	background-color: rgb(20, 195, 220);
+}
+
+.Navlist li a:hover {
+	color: rgb(255, 255, 255);
+}
+
+
+/* Slider */
+
+.SliderOuter {
+    margin-top: 30px;
+	padding-bottom: 15px;
+}
+
+.SliderInner {
+	position: relative;
+}
+
+.slider_caption {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(255, 255, 255);
+}
+
+.SliderHeader {
+	margin: 0 5px 7px 5px;
+}
+
+.SliderContent {
+	margin: 5px;
+	font-size: 0.9em;
+}
+
+.SliderList li img {
+	width: 100%;
+	max-width: 1200px;
+}
+
+
+/* Main */
+
+.MainOuter {
+	background-color: rgb(255, 255, 255);
+}
+
+.Main {
+    background-color: rgb(255, 255, 255);
+}
+
+.ContentWrapper {
+	width: 100%;
+	float: left;
+	margin-right: -350px;
+    background-color: rgb(255, 255, 255);
+}
+
+.Content {
+	margin-right: 350px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	overflow: hidden;
+}
+
+.Content img {
+	max-width: 100%;
+}
+
+
+/* Blog */
+
+.BlogPost {
+	overflow: hidden;
+}
+
+.BlogTitle {
+	margin: 0 0 12px 0;
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: normal;
+}
+
+.BlogHeader {
+	margin-bottom: 20px;
+}
+
+.BlogThumb {
+	float: left;
+	margin: 0 25px 0 0;
+	width: 200px;
+}
+
+.BlogReadMore {
+	font-weight: bold;
+}
+
+.BlogAuthor {
+	font-weight: bold;
+}
+
+.BlogMeta {
+	font-size: 0.9rem;
+	color: #4B4B4B;
+}
+
+.PostSeperator {
+	margin: 30px auto 30px auto;
+	border-top: 1px dotted grey;
+	height: 1px;
+}
+
+.PostSeperator {
+	margin: 30px auto 30px auto;
+	border-top: 1px dotted grey;
+	height: 1px;
+}
+
+
+/* Sidebar */
+
+.Sidebar {
+	float: right;
+	width: 300px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	background-color: #f1efef;
+}
+
+.SidebarSection {
+    padding: 20px;
+}
+
+
+/* Footer */
+
+.FooterOuter {
+	background-color: #f1efef;
+}
+
+.Footer {
+	overflow: hidden;
+    background-color: #f1efef;
+}
+
+.FooterWrap {
+	margin: 40px 0;
+	text-align: center;
+}
+
+.FooterLogo {
+	margin: 0 20px;
+	width: 90%;
+}
+
+.UniLogo {
+	max-width: 197px;
+}
+
+.LECLogo {
+	max-width: 448px;
+}
+
+.FooterLinks {
+	list-style: none;
+	margin: 30px 0;
+}
+
+.FooterLinks li {
+	display: inline;
+	margin: 0 10px;
+}
+
+.Footer p {
+	margin: 30px 0;
+}
+
+.ToTop {
+	text-decoration: none;
+}
+
+
+/* Pages */
+
+.PageTitle {
+	text-align: center;
+	margin: 0 auto auto auto;
+}
+
+.ArticlePageMeta {
+	text-align: center;
+	font-style: italic;
+	margin: 10px auto 30px auto;
+}
+
+/* Mobile */
+
+@media all and (max-width: 900px) {
+	.Content {
+		width: 100%;
+	}
+
+	.Sidebar {
+		width: 100%;
+	}
+
+	.ContentWrapper {
+		margin: 0;
+	}
+
+	.Navlist li {
+		display: block;
+		float: left;
+		width: 100%;
+		border-left: 0;
+		border-right: 0;
+		padding: 0;
+	}
+	
+	.Nav {
+		text-align: center;
+	}
+
+	.FooterLogo {
+		margin: 0;
+	}
+
+	.slider_caption {
+	padding: 10px;
+	}	
+}
