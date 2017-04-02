@@ -5,11 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Coastal Research at Lancaster</title>
         <link rel="stylesheet" href="https://thomasmns.github.io/CoastalResearchDev\theme\style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="https://thomasmns.github.io/CoastalResearchDev\theme\javascript\slick/slick.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://thomasmns.github.io/CoastalResearchDev\theme\javascript\slick\slick.css"/>
 		<link rel="stylesheet" type="text/css" href="https://thomasmns.github.io/CoastalResearchDev\theme\javascript\slick\slick-theme.css"/>
-        <script type="text/javascript" src="https://thomasmns.github.io/CoastalResearchDev\theme\javascript\slick\slick_init.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 		<link rel="icon" href="https://thomasmns.github.io/CoastalResearchDev\theme\favicon.png">
     </head>
@@ -67,21 +64,26 @@
 		    </div>
         </div>
 		<!-- Footer end -->
+        <!-- Javascript start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://thomasmns.github.io/CoastalResearchDev\theme\javascript\slick/slick.min.js"></script>
+        <script type="text/javascript" src="https://thomasmns.github.io/CoastalResearchDev\theme\javascript\slick\slick_init.js"></script>
         <script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
 
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
 
-  return t;
-}(document, "script", "twitter-wjs"));</script>
+        return t;
+        }(document, "script", "twitter-wjs"));</script>
+        <!-- Javascript end -->
     </body>
 </html>
